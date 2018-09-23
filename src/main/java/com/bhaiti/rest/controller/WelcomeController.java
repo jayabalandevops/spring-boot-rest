@@ -21,7 +21,7 @@ public class WelcomeController {
 
     @GetMapping("/welcome/user")
     @ResponseBody
-    public Welcome welcomeUser(@RequestParam(name="name", required=false, defaultValue="Sri Ramajeyam...!") String name) {
+    public Welcome welcomeUser(@RequestParam(name="name", required=false, defaultValue="Sri Ramajeyam...! - 2103hrs, Sun, 23 Sep 2018") String name) {
         return new Welcome(String.format(welcomemsg, name));
     }
 
